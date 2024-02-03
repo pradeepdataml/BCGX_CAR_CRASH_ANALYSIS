@@ -33,6 +33,7 @@ class Case_Study():
             a1_01 = self.primary_person_df.where(trim(col("PRSN_INJRY_SEV_ID")) == "KILLED").groupBy("CRASH_ID", "PRSN_GNDR_ID").agg(count("*").alias("CRASH_GENDERWISE_FATALITY_COUNT"))
             a1_02 = a1_01.where((col("CRASH_GENDERWISE_FATALITY_COUNT") > 2) & (trim(col("PRSN_GNDR_ID")) == "MALE"))            
             print("\nANSWER:", a1_02.count())
+            a1_02.coalesce(1).write.format("csv").mode("overwrite").save("./data/processed_data/analysis_1/")
 
         except Exception as e:
             print('Exception: ',e)
