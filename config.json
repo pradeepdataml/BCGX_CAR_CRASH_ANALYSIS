@@ -1,0 +1,19 @@
+{
+    "input_data":{
+            "Charges":"data/raw_data/Charges_use.csv",
+            "Damages":"data/raw_data/Damages_use.csv",
+            "Endorse":"data/raw_data/Endorse_use.csv",
+            "Primary_Person":"data/raw_data/Primary_Person_use.csv",
+            "Units":"data/raw_data/Units_use.csv",
+            "Restrict":"data/raw_data/Restrict_use.csv"
+    },
+
+    "output_data":{
+        "analysis_1":"data/processed_data/analysis_1"
+    },
+
+    "data_formats":{
+        "input_format":"csv",
+        "output_format":"delta"
+    }
+}
