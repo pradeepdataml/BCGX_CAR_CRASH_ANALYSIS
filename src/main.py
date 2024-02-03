@@ -15,8 +15,7 @@ if __name__ == "__main__":
 
         # os.environ["SPARK_HOME"] = "C:\Users\Pradeep\spark\spark-3.5.0-bin-hadoop3"
         os.environ["HADOOP_HOME"] = "C:/Users/Pradeep/anaconda3/pkgs/pyspark-3.4.1-py312haa95532_0/Lib/site-packages/pyspark/hadoop/bin/winutils.exe"
-        print("AAA")
-        # print("xyz",os.environ["SPARK_HOME"])
+        
         with open("./config.json", "r") as json_file:
             config = json.load(json_file)
 

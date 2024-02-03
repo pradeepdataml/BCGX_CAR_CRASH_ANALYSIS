@@ -38,7 +38,7 @@ class Case_Study():
             a1_02 = a1_01.where((col("CRASH_GENDERWISE_FATALITY_COUNT") > 2) & (trim(col("PRSN_GNDR_ID")) == "MALE"))
             a1_02.show()
             print("abcd:", a1_02.count())
-            a1_02.write.format("parquet").mode("write").save("data/processed_data/analysis_1/")
+            a1_02.coalesce(1).write.format("parquet").mode("overwrite").save("data/processed_data/analysis_2/")
 
         except Exception as e:
             print('Exception: ',e)
