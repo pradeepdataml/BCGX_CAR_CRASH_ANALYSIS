@@ -1,6 +1,7 @@
-                                                      BCGX - CASE STUDY - CAR CRASH ANALYSIS
-                                                                     BY
-                                                               PRADEEP GANESAN
+
+                                      BCGX - CASE STUDY - CAR CRASH ANALYSIS
+                                                     BY
+                                               PRADEEP GANESAN
 
 **SUMMARY:**
 
