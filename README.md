@@ -2,12 +2,18 @@
                                                                      BY
                                                                PRADEEP GANESAN
 
-**SUMMARY**
+**SUMMARY**:
+
 The project consists of a case study on car crashes in the US. The case study is done as part of the recruitment process at BCGX. The entire project is developed with pyspark and python. The main.py is the file that can be executed from command line or via spark submit to initiate the analysis job. The output of the 10 core analytic propositions can be viewed directly at the terminal by simply just running the main.py function from the terminal.
 
+
 **HOW TO RUN**
+    cd .
+    spark-submit src/main.py
+
 
 **ANALYTICS REQUIREMENTS**
+
 1.	Find the number of crashes (accidents) in which number of males killed are greater than 2?
 2.	How many two wheelers are booked for crashes? 
 3.	Determine the Top 5 Vehicle Makes of the cars present in the crashes in which driver died and Airbags did not deploy.
@@ -19,7 +25,7 @@ The project consists of a case study on car crashes in the US. The case study is
 9.	Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance
 10.	Determine the Top 5 Vehicle Makes where drivers are charged with speeding related offences, has licensed Drivers, used top 10 used vehicle colours and has car licensed with the Top 25 states with highest number of offences (to be deduced from the data)
 
-**EXPECTED OUTPUT**
+**EXPECTED OUTPUT:**
 1.	Develop an application which is modular & follows software engineering best practices (e.g. Classes, docstrings, functions, config driven, command line executable through spark-submit)
 2.	Code should be properly organized in folders as a project.
 3.	Input data sources and output should be config driven
