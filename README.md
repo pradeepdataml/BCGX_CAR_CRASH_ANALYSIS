@@ -5,7 +5,7 @@
 
 **SUMMARY:**
 
-The project consists of a case study on car crashes in the US. The case study is done as part of the recruitment process at BCGX. The entire project is developed with pyspark and python. The main.py is the file that can be executed from command line or via spark submit to initiate the analysis job. The workflow is designed in such a way that the 10 core analytic propositions can be viewed directly in the terminal upon execution of the job(main.py).
+The project consists of a case study on car crashes in the US. The case study is done as part of the recruitment process at BCGX. The entire project is developed with pyspark and python. The **main.py** file inside the **src** directory that can be executed from command line or via **spark-submit** to initiate the analysis job. The workflow is designed in such a way that the 10 core analytic propositions **can be viewed directly in the terminal** upon execution of the job(main.py).
 
 **ANALYTICS REQUIREMENTS:**
 
