@@ -15,7 +15,7 @@ if __name__ == "__main__":
     
 
         os.environ["HADOOP_HOME"] = "C:/Users/Pradeep/anaconda3/pkgs/pyspark-3.4.1-py312haa95532_0/Lib/site-packages/pyspark/hadoop/bin/winutils.exe"
-        # spark-submit --conf "spark.local.dir=/path/to/your/temp/directory" your_app.py
+
         with open("./config.json", "r") as json_file:
             config = json.load(json_file)
 
