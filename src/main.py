@@ -21,8 +21,6 @@ if __name__ == "__main__":
 
         cs = Case_Study(spark, config)
         cs.Analysis_1()
-
-        spark.stop()
         
         
     except Exception as e:

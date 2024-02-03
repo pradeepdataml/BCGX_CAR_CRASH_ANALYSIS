@@ -27,18 +27,12 @@ class Case_Study():
         
 
     def Analysis_1(self):
-        """
-        Question: Find the number of crashes (accidents) in which number of males killed are greater than 2?
-        Input: DF
-        output: DF
-        """
-        
         try:
+            print("#################################################  ANALYSIS 1 #################################################")
+            print("\nANALYSIS OBJECTIVE: Find the number of crashes (accidents) in which number of males killed are greater than 2?")
             a1_01 = self.primary_person_df.where(trim(col("PRSN_INJRY_SEV_ID")) == "KILLED").groupBy("CRASH_ID", "PRSN_GNDR_ID").agg(count("*").alias("CRASH_GENDERWISE_FATALITY_COUNT"))
-            a1_02 = a1_01.where((col("CRASH_GENDERWISE_FATALITY_COUNT") > 2) & (trim(col("PRSN_GNDR_ID")) == "MALE"))
-            a1_02.show()
-            print("abcd:", a1_02.count())
-            a1_02.coalesce(1).write.format("parquet").mode("overwrite").save("data/processed_data/analysis_2/")
+            a1_02 = a1_01.where((col("CRASH_GENDERWISE_FATALITY_COUNT") > 2) & (trim(col("PRSN_GNDR_ID")) == "MALE"))            
+            print("\nANSWER:", a1_02.count())
 
         except Exception as e:
             print('Exception: ',e)
