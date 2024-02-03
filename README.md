@@ -1,6 +1,6 @@
-                        BCGX - CASE STUDY - CAR CRASH ANALYSIS
-                                     BY
-                               PRADEEP GANESAN
+                                                              **BCGX - CASE STUDY - CAR CRASH ANALYSIS**
+                                                                           BY
+                                                                     PRADEEP GANESAN
 
 **SUMMARY**
 The project consists of a case study on car crashes in the US. The case study is done as part of the recruitment process at BCGX. The entire project is developed with pyspark and python. The main.py is the file that can be executed from command line or via spark submit to initiate the analysis job. The output of the 10 core analytic propositions can be viewed directly at the terminal by simply just running the main.py function from the terminal.
@@ -29,30 +29,30 @@ The project consists of a case study on car crashes in the US. The case study is
 
 **PROJECT STRUCTURE:**
 
-CASE_STUDY_BCGX:.
-│   BCGX_CAR_CRASH_ANALYSIS.ipynb
-│   config.json
-│   README.md
-│   requirements.txt
-│
-├───data
-│   ├───raw_data
-│   │       Charges_use.csv
-│   │       Damages_use.csv
-│   │       Endorse_use.csv
-│   │       Primary_Person_use.csv
-│   │       Restrict_use.csv
-│   │       Units_use.csv
-│   │
-│   └───support_files
-│           BCG_Case_Study_CarCrash_Updated_Questions.docx
-│           Data Dictionary.xlsx
-│
-├───src
-│   │   analysis.py
-│   │   main.py
-│   │
-│   └───__pycache__
-│           analysis.cpython-312.pyc
-│
-└───temp
+    CASE_STUDY_BCGX:.
+    │   BCGX_CAR_CRASH_ANALYSIS.ipynb
+    │   config.json
+    │   README.md
+    │   requirements.txt
+    │
+    ├───data
+    │   ├───raw_data
+    │   │       Charges_use.csv
+    │   │       Damages_use.csv
+    │   │       Endorse_use.csv
+    │   │       Primary_Person_use.csv
+    │   │       Restrict_use.csv
+    │   │       Units_use.csv
+    │   │
+    │   └───support_files
+    │           BCG_Case_Study_CarCrash_Updated_Questions.docx
+    │           Data Dictionary.xlsx
+    │
+    ├───src
+    │   │   analysis.py
+    │   │   main.py
+    │   │
+    │   └───__pycache__
+    │           analysis.cpython-312.pyc
+    │
+    └───temp
