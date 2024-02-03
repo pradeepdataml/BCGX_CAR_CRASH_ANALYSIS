@@ -10,5 +10,4 @@
 
 3. **RUN JOB BY EXECUTING main.py:**
 
-    cd .
-    spark-submit --master local[*] src/main.py
+    ```spark-submit --master local[*] src/main.py```
