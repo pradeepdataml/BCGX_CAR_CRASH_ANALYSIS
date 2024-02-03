@@ -36,7 +36,6 @@ class Case_Study():
             a1_02 = a1_01.where((col("CRASH_GENDERWISE_FATALITY_COUNT") > 2) & (trim(col("PRSN_GNDR_ID")) == "MALE"))            
             print("\nANSWER:", a1_02.count())
             print("\n############################################# END OF ANALYSIS 1 ###############################################")
-            # a1_02.coalesce(1).write.format("csv").mode("overwrite").save("./data/processed_data/analysis_1/")
 
 
             print("\n\n###############################################  ANALYSIS 2 ###################################################")
