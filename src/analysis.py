@@ -12,10 +12,7 @@ from pyspark.sql.types import *
 class Case_Study():
     def __init__(self, spark, config):
         input_paths = config["input_data"]
-        input_format = config["data_formats"]["input_format"]
-
-        self.output_paths = config["output_data"]
-        self.output_format = config["data_formats"]["input_format"]
+        input_format = config["data_format"]["input_format"]
 
         # reading raw data
         self.charges_df = spark.read.format(input_format).option("header", "true").option("inferSchema", "true").load(input_paths['Charges'])
@@ -26,7 +23,7 @@ class Case_Study():
         self.restrict_df = spark.read.format(input_format).option("header", "true").option("inferSchema", "true").load(input_paths['Restrict'])
         
 
-    def Analysis_1(self):
+    def start_analysis(self):
         try:
             print("\n ANALYSIS BEGINS HERE \n")
 

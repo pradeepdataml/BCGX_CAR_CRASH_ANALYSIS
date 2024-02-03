@@ -14,13 +14,13 @@ if __name__ == "__main__":
         spark.sparkContext.setLogLevel("FATAL")
     
 
-        os.environ["HADOOP_HOME"] = "C:/Users/Pradeep/anaconda3/pkgs/pyspark-3.4.1-py312haa95532_0/Lib/site-packages/pyspark/hadoop/bin/winutils.exe"
+        # os.environ["HADOOP_HOME"] = "C:/Users/Pradeep/anaconda3/pkgs/pyspark-3.4.1-py312haa95532_0/Lib/site-packages/pyspark/hadoop/bin/winutils.exe"
 
         with open("./config.json", "r") as json_file:
             config = json.load(json_file)
 
         cs = Case_Study(spark, config)
-        cs.Analysis_1()
+        cs.start_analysis()
 
         spark.stop()
         

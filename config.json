@@ -7,13 +7,8 @@
             "Units":"data/raw_data/Units_use.csv",
             "Restrict":"data/raw_data/Restrict_use.csv"
     },
-
-    "output_data":{
-        "analysis_1":"data/processed_data/analysis_1"
-    },
-
-    "data_formats":{
-        "input_format":"csv",
-        "output_format":"delta"
+    
+    "data_format":{
+        "input_format":"csv"
     }
 }
