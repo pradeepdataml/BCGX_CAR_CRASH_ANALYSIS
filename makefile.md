@@ -2,7 +2,7 @@
 
 1. **INSTALL DEPENDENCIES:**
 
-    pip install -r requirements.txt
+    ```pip install -r requirements.txt```
 
 
 2. **ADD SPARK_HOME AND HADOOP_HOME TO ENVIRONMENT VARIABLES**
