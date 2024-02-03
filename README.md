@@ -1,6 +1,6 @@
-                                                          BCGX - CASE STUDY - CAR CRASH ANALYSIS
-                                                                         BY
-                                                                   PRADEEP GANESAN
+                                                      BCGX - CASE STUDY - CAR CRASH ANALYSIS
+                                                                     BY
+                                                               PRADEEP GANESAN
 
 **SUMMARY**
 The project consists of a case study on car crashes in the US. The case study is done as part of the recruitment process at BCGX. The entire project is developed with pyspark and python. The main.py is the file that can be executed from command line or via spark submit to initiate the analysis job. The output of the 10 core analytic propositions can be viewed directly at the terminal by simply just running the main.py function from the terminal.
